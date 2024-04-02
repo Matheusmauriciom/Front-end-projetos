@@ -1,0 +1,134 @@
+:root{
+    font-size: 62.5%;
+
+    /* fontes titulo*/
+    --font-title: 'Viaoda Libre', cursive;
+
+
+    /* p */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-line-p: 1.6;
+
+    /* color */
+    --color-text:#555;
+    --color-menu:#425564;
+    --color-header:#162028;
+    --color-secton:#003d52;
+    --color-footer:#0b171f;
+    --color-footer-p:#6f8597;
+}
+p,a{
+    font-size: 1.7rem;
+    font-family: var(--font-padrao);
+}
+html{
+    max-width: 80%;
+    width: 144rem;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-header);
+    height: 2rem;
+    padding: 1rem;
+}
+.header__title{
+    font-size: 2.4rem;
+    color: white;
+    margin-left: 10rem;
+    font-family: var(--font-title);
+}
+.header__nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+.header__nav-list a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--color-menu);  
+    margin-right: 1rem;
+}
+.header__nav-list a:hover{
+    color: white;
+    text-decoration: underline;
+    cursor:default;
+}
+.main__title {
+    text-align: center;
+    margin-top: 10rem;
+    font-family: var(--font-title);
+    font-size: 3.6rem;
+}
+.main__p{
+    line-height: var(--font-line-p);
+    margin-top: 3rem;
+}
+img{
+    width: 100%;
+}
+.gallery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    
+}
+.gallery__box{
+    margin-top: 8rem;
+    flex: 1;
+    text-align: center;
+    
+    
+}
+.gallery__title{
+    font-family: var(--font-padrao);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--color-text);
+    font-weight: bold;
+    text-transform: uppercase;  
+    
+}
+.galerry_p{
+    font-size: 1.4rem ;
+    line-height: 0;  
+   
+}
+.section{
+    background-image: url(imagens/bg_detalhe.png);
+    background-color: var(--color-secton);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    color: white;
+    padding: 4rem;
+    width: auto;
+    height: 56rem;
+    margin-top: 6rem;
+}
+.section__title{
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 4rem;
+    width: 60%;
+    padding-left: 6rem;
+}
+.section__p{
+    margin-top: 8rem;
+    padding-left: 6rem;
+    width: 68%;
+    line-height: var(--font-line-p);
+}
+.rodape{
+    padding: 0.1rem;
+    background-color: var(--color-footer);
+}
+.rodape__p{
+  text-align: center;
+  color: var(--color-footer-p);
+  font-size: 1.5rem;
+ 
+}
